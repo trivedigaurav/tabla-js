@@ -32,7 +32,7 @@ var mapBols={
     Dhi:[86,76],Dhi1:[84,65],Dhi2:[82,66],Dhi3:[79,67],
     Dhe:[62,76],Dhe1:[62,65],Dhe2:[62,66],Dhe3:[62,67],
     Dhet:[82,76],Dhet1:[84,65],Dhet2:[86,66],Dhet3:[78,67],
-    "(":[59,59],")":[59,59],"-":[59,59]
+    "[":[59,59],"]":[59,59],"Silence":[59,59]
 };
 
 function playComposition(composition, tempo, volume){
