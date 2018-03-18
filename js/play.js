@@ -68,7 +68,7 @@ function playBeat(beat, ctxtime, delta) {
     }
 
     var midi = mapBols[beat];
-    console.log(ctxtime, beat, emph, matra, midi);
+    // console.log(ctxtime, beat, emph, matra, midi);
 
     if (beat != "-" && beat in mapBols) {
         midiAudioBuffers.push(
