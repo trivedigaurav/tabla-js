@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src="js/play.js" type="text/javascript"></script>
+    <script src="js/MIDI.min.js" type="text/javascript"></script>
+    <script src="js/synth_drum-ogg.js"></script>
+</head>
+<body>
+
+<h1>Composition</h1>
+
+<textarea id="composition" cols="120" rows="20">
+Dha1[5.0]+++++| Ti1| Ta10| Dha1[2]| Ti1| Ta10| Dha1 | Dha2 | Ti1 | Ta10 | Dha1 | Ge1 | Tin1 | Na1| Ke1 | Na1 | 
+Ta1+++++ | Ti1 | Ta10 | Ta1 | Ti1 | Ta10 | Ta1 | Ta2 | Ti1 | Ta10 | Dha1 | Ge1 | Dhin1 | Na1 | Ge1 | Na1
+</textarea>
+
+<br />
+
+<button type="submit" onclick="readComposition()">Play</button>
+<button type="submit" onclick="stopAllBeats()">Stop</button>
+
+<p>Compositions are written in the <a href="http://www.taalmala.com/help.shtml">TaalMala</a> notation.</p>
+
+<script type="text/javascript">
+
+var VOLUME = 120;
+var CHANNEL = 2;
+
+window.onload = function () {
+    MIDI.loadPlugin({
+        soundfontUrl: ".",
+        instruments: "synth_drum",
+        onsuccess: function() {
+            MIDI.programChange(CHANNEL, 118);
+            readComposition()
+        }
+    });
+};
+
+function readComposition() {
+    var script = document.getElementById("composition").value;
+    playComposition(script, 360)
+}
+
+</script>
+
+</body>
+</html>
