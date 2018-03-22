@@ -1,5 +1,5 @@
 var mapBols={
-    "Na": [32],
+    "Na": [31],
     "Ne": [33],
     "Tin": [41],
     "Tin2": [42],
@@ -7,8 +7,10 @@ var mapBols={
     "Ti": [40],
     "Re": [27],
     "Ki": [30],
-    "Ta": [35],
+    "Ke": [30],
+    "Ta": [32],
     "Te": [37],
+    "TiTa": [40,35]
     "Kat": [22],
     "Ge": [26],
     "Ga": [25],
@@ -71,7 +73,7 @@ function playBeat(beat, ctxtime, delta) {
     }
 
     var midi = mapBols[beat];
-    // console.log(ctxtime, beat, emph, matra, midi);
+    console.log(ctxtime, beat, emph, matra, midi);
 
     if (beat != "-" && beat in mapBols) {
         for (note of midi){

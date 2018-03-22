@@ -12,7 +12,7 @@
 <h1>Composition</h1>
 
 <textarea id="composition" cols="120" rows="20">
-Dha1[5.0]+++++| Ti| - | Dha1[2] | Ti | Ta | Dha1 | Dha2 | Ti | Ta | Dha1 | Ge | Thun | Na | Ke1 | Na | 
+Dha1[5.0]+++++| Ti| - | Dha1[2] | Ti | Ta | Dha1 | Dha2 | Ti | Ta | Dha1 | Ge | Thun | Na | Ke | Na | 
 Ta+++++ | Ti | Ta | Ta | Ti | Ta | Ta | Ta2 | Ti | Ta | Dha1 | Ge | Dhin | Na | Ge | Na
 </textarea>
 
@@ -30,7 +30,6 @@ var CHANNEL = 2;
 
 window.onload = function () {
     MIDI.loadPlugin({
-        soundfontUrl: ".",
         instruments: "synth_drum",
         onsuccess: function() {
             MIDI.programChange(CHANNEL, 118);
