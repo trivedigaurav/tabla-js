@@ -3,7 +3,7 @@ Proof-of-concept app for playing tabla compositions using [MIDI.js](https://gith
 
 [Demo](https://trivedigaurav.com/exp/tabla-js-master/example.html) available online.
 
-It uses sound samples by Pete Lockett downloaded from [here](http://www.petelockett.com/pete%20new%20pages/tabla%20programming.html):
+It uses sound samples by Pete Lockett (with permission) downloaded from [here](http://www.petelockett.com/pete%20new%20pages/tabla%20programming.html):
 
 | Sample            |  Note     |  Decimal|
 | ------------------|:-----------:|--------:|
